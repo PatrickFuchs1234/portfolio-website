@@ -23,107 +23,151 @@
 </head>
 
 <body> 
-    <!-- Header with links -->
+    <!-- Header -->
     <header class="grid">
-        <div class="col-8">
-            <h2> The Design Collective. </h2>
+        <div class="col-6_sm-12-middle padded-0 center-sm">
+            <h1> The Design Collective. </h1>   
+        </div>  
+        <nav class="col-6_sm-12-middle right padded-0 center-sm"> 
+            <a href="#why-us"> Why Us </a>
+            <a href="#services"> Services </a>
+            <a href="#projects"> Projects </a>
+            <a href="#contact"> Contact </a>
+        </nav>
+    </header> 
+
+    <!-- Banner section -->
+    <section class="bg-image bg-plant padded tall-70 grid-middle">
+        <div class="col-8_sm-10">
+            <h2> Website design & development that grows with your business </h2>   
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
         </div>
-        <div class="col-4">
-            <nav>
-                <a href="#">Why Us</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+    </section> 
+
+    <!-- Newsletter section -->
+    <section class="padded-2 bg-dark center light-text"> 
+        <p> Sign up to our newsletter to access free design resources. -> </p>
+    </section>
+
+    <!-- Icon Grid  -->
+    <section class="padded grid center icon-section" id="why-us">
+        <div class="col-12 center padded-b"> 
+            <h2> Why Choose Us </h2>
+        </div>
+        <div class="col-3_sm-6_xs-12">
+            <img src="/images/icons/flash.png" alt="Flash Icon">
+            <h4> Lightning Fast </h4>
+            <p> Porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-3_sm-6_xs-12">
+            <img src="/images/icons/idea-2.svg" alt="Idea Icon">
+            <h4> Strategic Perspective </h4>
+            <p> Sit amet consectetur adipisicing elit. Quis libero dolor quod voluptatibus vel eos expedita.</p>
+        </div>
+        <div class="col-3_sm-6_xs-12">
+            <img src="/images/icons/seo-tag.png" alt="SEO Icon">
+            <h4> Optimised for Google </h4>
+            <p> Veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div>
+        <div class="col-3_sm-6_xs-12">
+            <img src="/images/icons/dollar.svg" alt="Dollar Icon">
+            <h4> Modern E-Commerce </h4>
+            <p> Lorem ipsum dolor consectetur adipisicing elit. Quis libero quod voluptatibus vel eos expedita.</p>
+        </div>
+    </section>
+
+    <!-- Dark intro section -->
+    <section class="grid bg-green light-text padded">
+        <div class="col-7_sm-12 bg-image bg-meeting tall-50">
+        </div> 
+        <div class="col-5_sm-12-middle padded">
+            <h2> More than just another agency. </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla ipsam doloremque optio fugiat culpa. Repudiandae magnam numquam expedita, dolorum similique distinctio praesentium sint ad vero fugit rem explicabo fugiat.</p>
+            <p> Velit libero blanditiis ipsam similique. Autem dolorem, nobis ut magnam nulla hic beatae, amet est aperiam deleniti minima unde fuga? </p>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="padded bg-dark center light-text"> 
+        <h3> We have a community of over 3500 entrepreneurs.  </h3>
+        <a href="#" class="button"> Join the Facebook Community </a>
+    </section>
+
+    <!-- Services opening banner  -->
+    <section class="bg-image bg-plant-2 padded center tall-70 grid-right" id="services">
+        <div class="col-6_sm-8-middle right">
+            <h2> Our Services </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div>
+    </section>
+
+    <!-- Services grid  -->
+    <section class="padded grid">
+        <div class="col-4_xs-12 padded">
+            <h3> Design. </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div>
+        <div class="col-4_xs-12 padded">
+            <h3> Build. </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div>
+        <div class="col-4_xs-12 padded">
+            <h3> SEO. </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div>
+    </section>
+
+    <!-- Features / about blocks -->
+    <section class="bg-rust padded" id="projects">
+        <h2 class="center"> Recent Projects </h2>
+        <div class="grid">
+            <div class="col-5_sm-12-middle padded">
+                <h3> Zen Studio Website </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde quia explicabo illum, adipisci beatae nemo consectetur repellat ratione eius, repudiandae architecto eaque placeat velit cum, sint odit consequuntur ad?</p>
+                <a href="#" class="button"> Go to site </a>
+            </div>
+            
+            <div class="col-7_sm-12-middle padded">
+                <img src="/images/placeholder-project.png" alt="project name by the collective">    
+            </div>
+        </div>
+        
+        <div class="grid flex-flip-sm">
+            <div class="col-7_sm-12-middle padded">
+                <img src="/images/placeholder-project.png" alt="project name by the collective">    
+            </div>
+            
+            <div class="col-5_sm-12-middle padded">
+                <h3> Another Website Name </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde quia explicabo illum, adipisci beatae nemo consectetur repellat ratione eius, repudiandae architecto eaque placeat velit cum, sint odit consequuntur ad?</p>
+                <a href="#" class="button"> Go to site </a>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Footer -->
+    <footer class="grid bg-dark light-text padded padded-b-0" id="contact">
+        <div class="col-6_sm-12 padded center-sm">
+            <h2 class="logo"> The Design Collective </h2>
+            <h3> Web Design & Development </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita eos cumque laboriosam nisi molestiae quae libero similique. </p>
+        </div> 
+        <div class="col-6_sm-12-bottom padded right center-sm">
+            <h3> Let's Connect. </h3>
+            <nav> 
+                <a href="#"> <i class="fab fa-pinterest-p"></i> </a>
+                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                <a href="#"> <i class="fab fa-twitter"></i> </a>
             </nav>
         </div>
-    </header>
-
-    <!-- Headbanner -->
-    <section class="bg-image grid">
-        <div class="col-8">
-            <h1> Website design & development that grows with your business</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nulla soluta vitae, error tenetur accusantium mollitia, sapiente magnam saepe commodi incidunt a earum magni ad sequi fugit, at ab. Maxime!</p>
+        <div class="col-12 center padded-t">
+            <p class="subtle"> Copyright 2021</p>
         </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section>
-        <div>  
-            <p> Sign up to our newsletter to access free design resources. -> </p>
-        </div>
-    </section>
-
-    <!-- Cards Why Choose Us -->
-    <section class="grid">
-        <div class="col-12">
-            <h1> Why Choose Us</h1>
-        </div>
-        <div class="col-3">
-            <img src="/images/icons/flash.png">
-            <h3> Lightning Fast </h3>
-            <p> Porro aliquam labore, quas ipsa deleniti earum perspiciatis iste! Deserunt similique quas quidem commodi.</p>
-        </div>
-        <div class="col-3">
-            <img src="/images/icons/flash.png">
-            <h3> Strategic Perspective </h3>
-            <p> Quas ipsa deleniti earum perspiciatis iste! Deserunt similique quas quidem commodi.</p>
-        </div>
-        <div class="col-3">
-            <img src="/images/icons/flash.png">
-            <h3> Optimiced for Google </h3>
-            <p> Laboriosam quibusdam suscipit dolorem! Et corporis libero ea reprehenderit iste. Eligendi, quas.</p>
-        </div>
-        <div class="col-3">
-            <img src="/images/icons/flash.png">
-            <h3> Modern E-Commerce </h3>
-            <p> Vitae voluptatem nulla magni obcaecati, debitis nemo. Maxime libero deserunt cumque sit voluptas atque a consequatur rem nobis eos.</p>
-        </div>
-    </section>
-
-    <!-- Imagebanner More than just another Agency -->
-    <section class="grid">
-        <div class="col-7">
-            <div class="bg-image"></div>
-        </div>
-        <div class="col-5">
-            <h1> More than just another agency.</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore ut recusandae beatae quas repellendus vitae quasi sapiente accusantium quaerat, consequatur officia dolor adipisci sed magni repudiandae. Vitae, aperiam aliquid.</p>
-            <p> Consequatur officia dolor adipisci sed magni repudiandae. Vitae, aperiam aliquid.</p>
-        </div>
-    </section>
-
-    <!-- Join the Community Banner&Button -->
-    <section>
-        <div>
-            <h2> We have a community of over 3500 entrepreneurs  </h2>
-        </div>
-        <div>
-            <a href="#">Join the Facebook Community</a>
-        </div>
-    </section>
-
-    <!-- Banner Our services  -->
-    <section class="bg-image grid-right">
-        <div class="col-8">
-            <h1> Website design & development that grows with your business</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nulla soluta vitae, error tenetur accusantium mollitia, sapiente magnam saepe commodi incidunt a earum magni ad sequi fugit, at ab. Maxime!</p>
-        </div>
-    </section>
-
-    <!-- Cards Design Buils SEO -->
-    <section class="grid">
-        <div class="col-4">
-            <h3> Design </h3>
-            <p> Porro aliquam labore, quas ipsa deleniti earum perspiciatis iste! Deserunt similique quas quidem commodi.</p>
-        </div>
-        <div class="col-4">
-            <h3> Build </h3>
-            <p> Quas ipsa deleniti earum perspiciatis iste! Deserunt similique quas quidem commodi.</p>
-        </div>
-        <div class="col-4">
-            <h3> SEO </h3>
-            <p> Laboriosam quibusdam suscipit dolorem! Et corporis libero ea reprehenderit iste. Eligendi, quas.</p>
-        </div>
-    </section>
-
+    </footer>
 </body>
+</html>
+
+
+
+
