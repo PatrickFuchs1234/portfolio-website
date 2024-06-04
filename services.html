@@ -1,7 +1,62 @@
 ---
 layout: default
+features:
+ - title: Beautiful Design
+   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos dolor dolore aperiam rerum minima neque vitae exercitationem aut ipsam sed. Ipsum repudiandae facilis maxime, quam magnam officia id quidem accusamus?
+   featured_image: /images/placeholder-project.png
+ - title: Optimized Builds
+   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos dolor dolore aperiam rerum minima neque vitae exercitationem aut ipsam sed. Ipsum repudiandae facilis maxime, quam magnam officia id quidem accusamus?
+   featured_image: /images/placeholder-project.png
+
 ---
 
-<section>
-    services
+<!-- Banner section -->
+<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right">
+    <div class="col-6_sm-10 editable right">
+        <h2> Our Services </h2>   
+        <p> Lorem ipsum dolor sit amet cnsectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam volutatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+    </div>
+</section> 
+
+<section class="padded bg-green">
+    <div class="capped-width grid">
+        <div class="col-4_sm-12 padded-2">
+            <h3> Design. </h3>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nostrum ad voluptatibus, sed et, rem, corporis incidunt illum eveniet vero adipisci ea non ex aut tenetur suscipit aspernatur impedit amet!</p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nostrum ad voluptatibus, sed et, rem, corporis incidunt illum eveniet vero adipisci ea non ex aut tenetur suscipit aspernatur impedit amet!</p>
+        </div>
+        <div class="col-4_sm-12 padded-2">
+            <h3> Built. </h3>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nostrum ad voluptatibus, sed et, rem, corporis incidunt illum eveniet vero adipisci ea non ex aut tenetur suscipit aspernatur impedit amet!</p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nostrum ad voluptatibus, sed et, rem, corporis incidunt illum eveniet vero adipisci ea non ex aut tenetur suscipit aspernatur impedit amet!</p>
+        </div>
+        <div class="col-4_sm-12 padded-2">
+            <h3> Optimise. </h3>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nostrum ad voluptatibus, sed et, rem, corporis incidunt illum eveniet vero adipisci ea non ex aut tenetur suscipit aspernatur impedit amet!</p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nostrum ad voluptatibus, sed et, rem, corporis incidunt illum eveniet vero adipisci ea non ex aut tenetur suscipit aspernatur impedit amet!</p>
+        </div>
+        <div class="col-12 padded-1 center">
+            <a href="/contact" class="button">Get in Tuch</a>
+        </div>
+    </div>
 </section>
+
+{% include newsletter-signup.html%}
+
+<!-- Features / about blocks -->
+<section class="capped-width">
+    {% for item in page.features %}
+
+    <div class="grid flex-flip-alternate">
+        <div class="col-5_sm-12-middle padded">
+            <h3> {{ item.title }} </h3>
+            <p> {{ item.description }} </p>
+        </div>
+        
+        <div class="col-7_sm-12-middle padded">
+            <img src="{{ item.featured_image }}" alt="{{ project.title }}">    
+        </div>
+    </div>
+    
+    {% endfor %}
+</section> 

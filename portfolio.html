@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Projects -->
 <section class="padded bg-green grid">
     <div class="col-9_sm-11 light-text padded-b">
         <h2> We design & create but if you have a design of your own, let us know!</h2>
@@ -27,10 +28,11 @@ layout: default
 
 {% include newsletter-signup.html %}
 
+<!-- Featured Project -->
 <section class="padded">
     <h2 class="center margin-b-1"> Featured Project </h2>
     
-    <div class="capped-width">
+    <div class="capped-width-narrow">
         {% for project in site.projects limit:1 %}
             <div class="bg-image landscape"
             style="background-image: url('{{project.featured_image}}');">
@@ -42,8 +44,8 @@ layout: default
                 </div>
                 <div class="col-4 padded-1">
                     <p class="emphasis"> Design by: {{ project.design-by }}</p>
-                    <p class="emphasis"> Built by: {{ project.built-by }}</p>
-                    <a href="{{ project.live_url }}" class="button" target="_blank"> View Live Site </a>
+                    <p class="emphasis"> Built by: {{ project.build-by }}</p>
+                    <a href="{{ project.live_url }}" class="button-dark" target="_blank"> View Live Site </a>
                 </div>
             </div>
 
