@@ -24,13 +24,13 @@ about-video-id: SA0PrXbe-8s
 ---
 <!-- Banner section -->
 <section class="tall-60 grid bg-green">
-    <div class="col-5-middle  padded">
+    <div class="col-5_sm-12-middle  padded">
         <h2 class="editable">
-            Meet our growing Familys
+            Meet our growing Family
         </h2>   
         <p class="editable"> Lorem ipsum dolor sit amet cnsectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
-    <div class="col-7 bg-image bg-plant" style="background-image: url('{{page.banner_image}}');"></div>
+    <div class="col-7 hide-sm bg-image bg-plant" style="background-image: url('{{page.banner_image}}');"></div>
 </section> 
 
 <section class="padded">
@@ -39,7 +39,7 @@ about-video-id: SA0PrXbe-8s
     {% for person in page.team %}
 
         <div class="grid flex-flip-alternate">
-            <div class="col-5 padded-2">
+            <div class="col-5-middle padded-2">
                 <img src="{{person.profile_image}}" class="profile-image" alt="Image of {{person.name}}" />
             </div>
             <div class="col-7-middle padded-1">

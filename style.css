@@ -31,6 +31,9 @@ html {
 .padded-l  { padding-left: 5%;   }
 .padded-r  { padding-right: 5%;  }
 
+.margin-b-1 {margin-bottom: 1rem;}
+.margin-b-2 {margin-bottom: 2rem;}
+
 .padded-0 { padding: 0; }
 .padded-b-0 { padding-bottom: 0; }
 .margin-b-0 { margin-bottom: 0; }
@@ -149,6 +152,10 @@ footer a:hover {
     background-position: center; 
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
+}
+
+.landscape{
+    padding-bottom: 60%;
 }
 
 .bg-plant {
